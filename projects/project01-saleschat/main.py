@@ -19,7 +19,7 @@ print()
 
 if learn_more == "yes":
     # Sales Pitch
-    print("""Our Happy Little Landscape is a follow by number 5 x 7 Canvas
+    print("""Our Happy Little Creation is a follow by number 5 x 7 Canvas
 made to bring a peaceful touch of nature into your home. Each one is unique,
 but they will always include happy little trees. There are no mistakes here,
 only happy little creations!
@@ -29,3 +29,21 @@ Features and Benefits:
 - Paint
 - Brushes
 - Color Key Guide""")
+    
+print()
+print("Price: $" + str(price) + "for each painting")
+print()
+
+# Ask if the customer wants to make a purchase.
+buy_product = input("Would you like to buy a Happy Little Creation? Enter yes or no: ")
+print()
+
+if buy_product == "yes":
+    # Gather the customer's information.
+    print("Wonderful! Bob will help you complete your order.")
+
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
+    email = input("Enter your email address: ")
+    phone = input("Enter your phone number: ")
+    quantity = int(input("How many paintings would you like to buy? "))
