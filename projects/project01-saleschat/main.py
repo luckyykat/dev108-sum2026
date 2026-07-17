@@ -8,7 +8,7 @@ tax_rate = 0.10
 
 # Greet the customer and introduce the chatbot.
 print("========================================")
-print("Welcome to Happy Little Creations!")
+print("  Welcome to Happy Little Creations!")
 print("========================================")
 print("Hello there! My name is Bob, your happy little sales chatbot.")
 print()
@@ -52,3 +52,24 @@ if buy_product == "yes":
 subtotal = round(price * quantity, 2)
 tax = round(subtotal * tax_rate, 2)
 total = round(subtotal + tax, 2)
+
+# Display the receipt.
+print()
+print("============================================")
+print("        Happy Little Creations")
+print("               Receipt")
+print("============================================")
+print("Customer: " + first_name +" "+ last_name")
+print("Email:" + email)
+print("Phone: " + phone)
+print("--------------------------------------------")
+print("Item: Happy Little Creation")
+print("Quantity: " + str(quantity))
+print("Price each: $" + str(price))
+print("Subtotal: $" + str(subtotal))
+print("Sales tax (10%): $" + str(tax))
+print("Total amount due: $" + str(total))
+print("==============================================")
+print()
+print("Thank you for shopping with Happy Little Creations!")
+print("Don't forget there are no mistakes, only happy accidents. Happy Painting! - Bob")
