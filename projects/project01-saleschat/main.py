@@ -42,11 +42,11 @@ if buy_product == "yes":
     # Gather the customer's information.
     print("Wonderful! Bob will help you complete your order.")
 
-        first_name = input("Enter your first name: ")
-        last_name = input("Enter your last name: ")
-        email = input("Enter your email address: ")
-        phone = input("Enter your phone number: ")
-        quantity = int(input("How many paintings would you like to buy? "))
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
+    email = input("Enter your email address: ")
+    phone = input("Enter your phone number: ")
+    quantity = int(input("How many paintings would you like to buy? "))
 
     # Calculate the subtotal, slaes tax, and total
     subtotal = round(price * quantity, 2)
