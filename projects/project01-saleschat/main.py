@@ -59,7 +59,7 @@ print("============================================")
 print("        Happy Little Creations")
 print("               Receipt")
 print("============================================")
-print("Customer: " + first_name +" "+ last_name")
+print("Customer: " + first_name + " " + last_name)
 print("Email:" + email)
 print("Phone: " + phone)
 print("--------------------------------------------")
@@ -74,12 +74,12 @@ print()
 print("Thank you for shopping with Happy Little Creations!")
 print("Don't forget there are no mistakes, only happy accidents. Happy Painting! - Bob")
 
-# End if customer does not want to buy.
 else: 
-print("No problem! Thank you for visiting Happy Little Creations.")
-print("Bob hopes you have a happy little day!")
+    # End if customer does not want to buy.
+    print("No problem! Thank you for visiting Happy Little Creations.")
+    print("Bob hopes you have a happy little day!")
 
-# End if the customer does not want to learn about the product
 else:
-print("That's okay! Thank you for stopping by Happy Little Creations.")
-print("Bob hopes you have a happy little day!")
+    # End if the customer does not want to learn about the product
+    print("That's okay! Thank you for stopping by Happy Little Creations.")
+    print("Bob hopes you have a happy little day!")
