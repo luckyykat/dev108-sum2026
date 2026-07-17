@@ -1,4 +1,7 @@
-# This is a placeholder for your code. No starter file is provided. 
+# DEV 108 - Project 1
+# 07/13/26
+# Katherine Luciano
 
-# Follow the instructions and create comments for the
-#  actions your program will perform. 
+# Set the product price and sales tax rate.
+price = 69.99
+tax_rate = 0.10
