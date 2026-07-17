@@ -42,11 +42,11 @@ if buy_product == "yes":
     # Gather the customer's information.
     print("Wonderful! Bob will help you complete your order.")
 
-    first_name = input("Enter your first name: ")
-    last_name = input("Enter your last name: ")
-    email = input("Enter your email address: ")
-    phone = input("Enter your phone number: ")
-    quantity = int(input("How many paintings would you like to buy? "))
+        first_name = input("Enter your first name: ")
+        last_name = input("Enter your last name: ")
+        email = input("Enter your email address: ")
+        phone = input("Enter your phone number: ")
+        quantity = int(input("How many paintings would you like to buy? "))
 
     # Calculate the subtotal, slaes tax, and total
     subtotal = round(price * quantity, 2)
@@ -75,11 +75,11 @@ if buy_product == "yes":
     print("Don't forget there are no mistakes, only happy accidents. Happy Painting! - Bob")
 
     else:
-    # End if the customer does not want to buy.
-    print("No problem! Thank you for visiting Happy Little Creations.")
-    print("Bob hopes you have a happy little day!")
+        # End if the customer does not want to buy.
+        print("No problem! Thank you for visiting Happy Little Creations.")
+        print("Bob hopes you have a happy little day!")
 
 else:
     # End if the customer does not want to learn about the product.
-    print("That's okay! Thank you for stopping by Happy Little Creations.")
+    print("That is okay! Thank you for stopping by Happy Little Creations.")
     print("Bob hopes you have a happy little day!")
