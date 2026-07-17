@@ -48,36 +48,36 @@ if buy_product == "yes":
     phone = input("Enter your phone number: ")
     quantity = int(input("How many paintings would you like to buy? "))
 
-# Calculate the subtotal, slaes tax, and total
-subtotal = round(price * quantity, 2)
-tax = round(subtotal * tax_rate, 2)
-total = round(subtotal + tax, 2)
+    # Calculate the subtotal, slaes tax, and total
+    subtotal = round(price * quantity, 2)
+    tax = round(subtotal * tax_rate, 2)
+    total = round(subtotal + tax, 2)
 
-# Display the receipt.
-print()
-print("============================================")
-print("        Happy Little Creations")
-print("               Receipt")
-print("============================================")
-print("Customer: " + first_name + " " + last_name)
-print("Email:" + email)
-print("Phone: " + phone)
-print("--------------------------------------------")
-print("Item: Happy Little Creation")
-print("Quantity: " + str(quantity))
-print("Price each: $" + str(price))
-print("Subtotal: $" + str(subtotal))
-print("Sales tax (10%): $" + str(tax))
-print("Total amount due: $" + str(total))
-print("==============================================")
-print()
-print("Thank you for shopping with Happy Little Creations!")
-print("Don't forget there are no mistakes, only happy accidents. Happy Painting! - Bob")
+    # Display the receipt.
+    print()
+    print("============================================")
+    print("        Happy Little Creations")
+    print("               Receipt")
+    print("============================================")
+    print("Customer: " + first_name + " " + last_name)
+    print("Email:" + email)
+    print("Phone: " + phone)
+    print("--------------------------------------------")
+    print("Item: Happy Little Creation")
+    print("Quantity: " + str(quantity))
+    print("Price each: $" + str(price))
+    print("Subtotal: $" + str(subtotal))
+    print("Sales tax (10%): $" + str(tax))
+    print("Total amount due: $" + str(total))
+    print("==============================================")
+    print()
+    print("Thank you for shopping with Happy Little Creations!")
+    print("Don't forget there are no mistakes, only happy accidents. Happy Painting! - Bob")
 
     else:
-        # End if the customer does not want to buy.
-        print("No problem! Thank you for visiting Happy Little Creations.")
-        print("Bob hopes you have a happy little day!")
+    # End if the customer does not want to buy.
+    print("No problem! Thank you for visiting Happy Little Creations.")
+    print("Bob hopes you have a happy little day!")
 
 else:
     # End if the customer does not want to learn about the product.
