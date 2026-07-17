@@ -79,3 +79,7 @@ else:
 print("No problem! Thank you for visiting Happy Little Creations.")
 print("Bob hopes you have a happy little day!")
 
+# End if the customer does not want to learn about the product
+else:
+print("That's okay! Thank you for stopping by Happy Little Creations.")
+print("Bob hopes you have a happy little day!")
