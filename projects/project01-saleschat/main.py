@@ -74,12 +74,12 @@ print()
 print("Thank you for shopping with Happy Little Creations!")
 print("Don't forget there are no mistakes, only happy accidents. Happy Painting! - Bob")
 
-else: 
-    # End if customer does not want to buy.
-    print("No problem! Thank you for visiting Happy Little Creations.")
-    print("Bob hopes you have a happy little day!")
+    else:
+        # End if the customer does not want to buy.
+        print("No problem! Thank you for visiting Happy Little Creations.")
+        print("Bob hopes you have a happy little day!")
 
 else:
-    # End if the customer does not want to learn about the product
+    # End if the customer does not want to learn about the product.
     print("That's okay! Thank you for stopping by Happy Little Creations.")
     print("Bob hopes you have a happy little day!")
