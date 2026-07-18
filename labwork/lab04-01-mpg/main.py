@@ -1,7 +1,9 @@
-# Starting file for Exercise 3-1
+# DEV 108 Lab 04
+# 07/17/26
+# Katherine Luciano
 
 # display a welcome message
-print("The Miles Per Gallon application")
+print("Welcome to The Miles Per Gallon application")
 print()
 
 # get input from the user
