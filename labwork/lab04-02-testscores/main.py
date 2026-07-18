@@ -37,5 +37,5 @@ while repeat_test_scores.lower() == "y":
     print("Total Score:", score_total,
         "\nAverage Score:", average_score)
     print()
-    repeat_test_scores = input("Enter anoter set of test scores? y/n: ")
+    repeat_test_scores = input("Enter another set of test scores? y/n: ")
 print("Thank you for using the Test Scores Application, have a great day!")
