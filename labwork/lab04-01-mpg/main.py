@@ -28,7 +28,9 @@ while repeat_mpg.lower() == "y":
         mpg = round((miles_driven / gallons_used), 2)
         print("Miles Per Gallon:          ", mpg)
         total_gas_cost = round(gallons_used * cost_per_gallon, 2)
+        print("Total Gas Cost:          ", total_gas_cost)
         cost_per_mile = round(total_gas_cost / miles_driven, 2)
+        print("Cost Per Mile:          ", cost_per_mile)
 
     print()
     repeat_mpg = input("Get entries for another trip? (y/n): ")
