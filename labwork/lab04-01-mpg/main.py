@@ -3,7 +3,7 @@
 # Katherine Luciano
 
 # display a welcome message
-print("Welcome to The Miles Per Gallon application")
+print("Welcome to The Miles Per Gallon Application")
 print()
 
 # set the loop to run atleast once
@@ -27,5 +27,5 @@ while repeat_mpg.lower() == "y":
 
     print()
     repeat_mpg = input("Get entries for another trip? (y/n)")
-print("Bye")
+print("Thank you for using The Miles Per Gallon Application, have a great day")
 
