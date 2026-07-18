@@ -1,12 +1,12 @@
-# starting file for Exercise 3-2
-
-# be sure to follow along with my video demonstration video in our Canvas assignment instructions if you need help
+# DEV 108 Lab 04.2
+# 07/17/26
+# Katherine Luciano
 
 # display a welcome message
 print("The Test Scores application")
 print()
 print("Enter test scores")
-print("Enter 999 to end input")
+print("Enter 'end' to end input")
 print("======================")
 
 # initialize variables
