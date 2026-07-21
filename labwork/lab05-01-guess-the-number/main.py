@@ -25,6 +25,17 @@ def play_game():
         level = input(
             "Choose a level: e for Easy, m for Medium, or h for Hard: "
         ).lower()
+
+    # Setting the levels and amount of tries 
+    if level == "e":
+        max_number = 10
+        tries = 5
+    elif level == "m":
+        max_number == 100
+        tries == 8
+    else:
+        max_number == 1000
+        tries == 10
     
     while (guess := int(input("Your guess: "))) != number:
         if guess < number:
