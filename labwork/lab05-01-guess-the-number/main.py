@@ -4,8 +4,6 @@
 
 import random
 
-LIMIT = 10
-
 def display_title():
     print("Welcome to Guess the Number!")
     print()
@@ -16,10 +14,18 @@ def get_name():
     print()
 
 def play_game():    
-    number = random.randint(1, LIMIT)
-    print(f"I'm thinking of a number from 1 to {LIMIT}\n")
-    count = 1
+    # Ask the player to select a difficulty level
+    level = input(
+        "Chose a level: e for Easy, m for Medium, or h for Hard: "
+    ).lower()
 
+    # Keep asking the user until they choose a level
+    while level != "e" and level != "m" and level != "h":
+        print("That was an invalid input, please try again!")
+        level = input(
+            "Choose a level: e for Easy, m for Medium, or h for Hard: "
+        ).lower()
+    
     while (guess := int(input("Your guess: "))) != number:
         if guess < number:
             print("Too low.")
