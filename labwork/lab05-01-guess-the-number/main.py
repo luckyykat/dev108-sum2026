@@ -54,9 +54,10 @@ def play_game():
             count += 1
         else:
             print(f"You guessed it in {count} tries!\n")
-            break
+            return "win"
     else: 
-        print("You ran out of guesses, the number was {number}.\n")
+        print(f"You ran out of guesses, the number was {number}.\n")
+        return "loss"
      
 def main():
     display_title()
