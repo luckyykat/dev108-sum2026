@@ -7,11 +7,11 @@ import random
 LIMIT = 10
 
 def display_title():
-    print("Guess the number!")
+    print("Welcome to Guess the Number!")
     print()
 
 def get_name():
-    player_name = input("What is your name?")
+    player_name = input("What is your name? ")
     print(f"Hello, {player_name}!")
     print()
 
@@ -31,6 +31,7 @@ def play_game():
      
 def main():
     display_title()
+    get_name()
     again = "y"
     while again.lower() == "y":
         play_game()
