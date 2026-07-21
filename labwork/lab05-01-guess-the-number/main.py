@@ -4,17 +4,19 @@
 
 import random
 
+# Title of Game
 def display_title():
     print("Welcome to Guess the Number!")
     print()
 
+# Get the users name
 def get_name():
     player_name = input("What is your name? ")
     print(f"Hello, {player_name}!")
     print()
 
+# Ask the player to select a difficulty level
 def play_game():    
-    # Ask the player to select a difficulty level
     level = input(
         "Chose a level: e for Easy, m for Medium, or h for Hard: "
     ).lower()
@@ -41,14 +43,20 @@ def play_game():
     print(f"I'm thinking of a number from 1 to {max_number}\n")
     count = 1
 
-    while (guess := int(input("Your guess: "))) != number:
+    while count <= tries:
+        guess = int(input("Your guess: "))
+
         if guess < number:
             print("Too low.")
             count += 1
         elif guess > number:
             print("Too high.")
             count += 1
-    print(f"You guessed it in {count} tries.\n")
+        else:
+            print(f"You guessed it in {count} tries!\n")
+            break
+    else: 
+        print("You ran out of guesses, the number was {number}.\n")
      
 def main():
     display_title()
