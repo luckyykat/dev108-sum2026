@@ -31,12 +31,16 @@ def play_game():
         max_number = 10
         tries = 5
     elif level == "m":
-        max_number == 100
-        tries == 8
+        max_number = 100
+        tries = 8
     else:
-        max_number == 1000
-        tries == 10
-    
+        max_number = 1000
+        tries = 10
+
+    number = random.randint(1, max_number)
+    print(f"I'm thinking of a number from 1 to {max_number}\n")
+    count = 1
+
     while (guess := int(input("Your guess: "))) != number:
         if guess < number:
             print("Too low.")
