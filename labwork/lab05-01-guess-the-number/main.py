@@ -10,6 +10,11 @@ def display_title():
     print("Guess the number!")
     print()
 
+def get_name():
+    player_name = input("What is your name?")
+    print(f"Hello, {player_name}!")
+    print()
+
 def play_game():    
     number = random.randint(1, LIMIT)
     print(f"I'm thinking of a number from 1 to {LIMIT}\n")
