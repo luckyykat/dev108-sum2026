@@ -2,9 +2,10 @@
 # 07/20/26
 # Katherine Luciano
 
+# Picks the number randomly
 import random
 
-# Title of Game
+# Title of game
 def display_title():
     print("Welcome to Guess the Number!")
     print()
@@ -39,6 +40,7 @@ def play_game():
         max_number = 1000
         tries = 10
 
+# Lets the user know if they are guessing too high or too low
     number = random.randint(1, max_number)
     print(f"I'm thinking of a number from 1 to {max_number}\n")
     count = 1
@@ -58,7 +60,8 @@ def play_game():
     else: 
         print(f"You ran out of guesses, the number was {number}.\n")
         return "loss"
-     
+
+# Main flow of the game     
 def main():
     display_title()
     get_name()
@@ -70,7 +73,8 @@ def main():
 
     while again.lower() == "y":
         result = play_game()
-        # Update players score
+
+    # Update players score
         if result == "win":
             wins += 1
         else:
@@ -78,7 +82,7 @@ def main():
         print(f"Score: {wins} wins and {losses} losses.")
         again = input("Would you like to play again? (y/n): ")
         print()
-    print("Bye!")
+    print("Thank you for playing, take care!")
 
 # if started as the main module, call the main function
 if __name__ == "__main__":
