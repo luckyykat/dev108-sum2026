@@ -1,4 +1,6 @@
-# starting Guess the Number program from our textbook
+# DEV 108 - Lab Activity 5
+# 07/20/26
+# Katherine Luciano
 
 import random
 
