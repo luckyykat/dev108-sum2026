@@ -62,9 +62,20 @@ def play_game():
 def main():
     display_title()
     get_name()
+    
+    # Start players score at zero
+    wins = 0
+    losses = 0
     again = "y"
+
     while again.lower() == "y":
-        play_game()
+        result = play_game()
+        # Update players score
+        if result == "win":
+            wins += 1
+        else:
+            losses += 1
+        print(f"Score: {wins} wins and {losses} losses.")
         again = input("Would you like to play again? (y/n): ")
         print()
     print("Bye!")
