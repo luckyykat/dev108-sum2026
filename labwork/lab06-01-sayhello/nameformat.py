@@ -2,8 +2,12 @@
 # 07/23/26
 # Katherine Luciano
 
-# sayHello() ex: Hello Tony!
+"""Functions for greeting users and formatting names."""
 
+# Get the users name
+def sayHello(firstName):
+    """Return a greeting that uses the user's first name."""
+    return f"Hello {firstName}!"
 
 
 # fullName() ex: Tony Stark
