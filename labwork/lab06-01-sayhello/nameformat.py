@@ -1,5 +1,6 @@
-# This is where you will code your three functions 
-# Be sure to write documentation for this module. Refer to your book chapter for instructions on how to do this.
+# DEV 108 - Lab Activity 6 - Name Format
+# 07/23/26
+# Katherine Luciano
 
 # sayHello() ex: Hello Tony!
 
