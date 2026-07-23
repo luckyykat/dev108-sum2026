@@ -21,3 +21,11 @@ def main():
     print("3 - Output Last Name, First Name")
     print("4 - Read Documentation")
     print("5 - Exit")
+
+    choice = ""
+
+    while choice != "5":
+        choice = input("\nWhat is your choice? ")
+
+        if choice == "1":
+            print(nameformat.sayHello(firstName))
