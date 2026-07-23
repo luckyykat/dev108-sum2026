@@ -15,4 +15,9 @@ def main():
     firstName = input("Please enter your first name: ")
     lastName = input("Please enter your name: ")
 
-    
+    print("\n* * MENU * *")
+    print("1 - Say Hello")
+    print("2 - Output Full Name")
+    print("3 - Output Last Name, First Name")
+    print("4 - Read Documentation")
+    print("5 - Exit")
