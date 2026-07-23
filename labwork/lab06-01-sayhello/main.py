@@ -46,3 +46,6 @@ def main():
 
         else:
             print("Please choose an option from 1 through 5.")
+
+    if __name__ == "__main__":
+        main()
