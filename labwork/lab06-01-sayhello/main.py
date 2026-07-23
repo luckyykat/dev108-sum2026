@@ -29,3 +29,20 @@ def main():
 
         if choice == "1":
             print(nameformat.sayHello(firstName))
+
+        elif choice == "2":
+            print(nameformat.fullName(firstName, lastName))
+
+        elif choice == "3":
+            print(nameformat.lastNameFirst(firstName, lastName))
+
+        elif choice == "4":
+            help(nameformat.sayHello)
+            help(nameformat.fullName)
+            help(nameformat.lastNameFirst)
+
+        elif choice == "5":
+            print("Goodbye!")
+
+        else:
+            print("Please choose an option from 1 through 5.")
