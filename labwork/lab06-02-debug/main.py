@@ -8,19 +8,19 @@
 # Inputs: 100, 90, 80, x
 # Expected Output: Total = 270, Average = 90
 # Actual Output: Total = 270, Average = 45
-# Pass/Fail: Pass
+# Pass/Fail: Fail
 # 
 # Test 2 
 # Inputs: 0, 100, x 
 # Expected Output: Total = 100, Average = 50 
-# Actual Output: Total = 100, Average = 50
+# Actual Output: Total = 100, Average = 25
 # Pass/Fail: Fail
 #
 # Test 3 
 # Inputs: 80, 110, 70, x
 # Expected Output: 110 - discarded, Total = 150, Average = 75
 # Actual Output: Total = 150, Average = 30
-# Pass/ Fail: Pass
+# Pass/ Fail: Fail
 
 print("The Test Scores application")
 print()
@@ -37,7 +37,7 @@ while True:
     test_score = input("Enter test score (or 'x' to quit): ")
     if test_score != "x":
         test_score = int(test_score)
-        counter += 1
+    
     else:
         break
     if test_score >= 0 and test_score <= 100:
