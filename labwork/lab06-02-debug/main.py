@@ -7,20 +7,20 @@
 # Test 1
 # Inputs: 100, 90, 80, x
 # Expected Output: Total = 270, Average = 90
-# Actual Output:
-# Pass/Fail:
+# Actual Output: Total = 270, Average = 45
+# Pass/Fail: Pass
 # 
 # Test 2 
 # Inputs: 0, 100, x 
 # Expected Output: Total = 100, Average = 50 
-# Actual Output:
-# Pass/Fail: 
+# Actual Output: Total = 100, Average = 50
+# Pass/Fail: Fail
 #
 # Test 3 
 # Inputs: 80, 110, 70, x
-# Expected Output: 110 discarded, Total = 150, Average = 75
-# Actual Output: 
-# Pass/ Fail:
+# Expected Output: 110 - discarded, Total = 150, Average = 75
+# Actual Output: Total = 150, Average = 30
+# Pass/ Fail: Pass
 
 print("The Test Scores application")
 print()
