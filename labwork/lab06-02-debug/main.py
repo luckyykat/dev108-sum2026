@@ -1,14 +1,4 @@
-# DEV 108 - Lab Activity 6 - Testing and Debugging
-# 7/24/26
-# Katherine Luciano
-
-# Test Case Values
-#
-# Inputs: 100, 90, 80, x
-# Expected Output: Total = 270, Average 90
-# Actual Output:
-# Pass/Fail: 
-
+# display a welcome message
 print("The Test Scores application")
 print()
 print("Enter test scores")
