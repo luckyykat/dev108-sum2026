@@ -20,7 +20,11 @@
 # Inputs: 80, 110, 70, x
 # Expected Output: 110 - discarded, Total = 150, Average = 75
 # Actual Output: Total = 150, Average = 30
-# Pass/ Fail: Fail
+# Pass/ Fail: 
+
+# Debugging Change: I removed the first counter on line 43 b/c it counted the scores twice and were invalid.
+# The counter should increase only fater the score has passed the range check and is added to the total.
+ 
 
 print("The Test Scores application")
 print()
