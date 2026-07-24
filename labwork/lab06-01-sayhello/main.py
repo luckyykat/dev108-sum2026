@@ -2,7 +2,6 @@
 # 07/22/26
 # Katherine Luciano
 
-
 # Import nameformat.py
 import nameformat
 
@@ -13,7 +12,7 @@ def main():
 
 # Ask for the names
     firstName = input("Please enter your first name: ")
-    lastName = input("Please enter your name: ")
+    lastName = input("Please enter your last name: ")
 
 # Display the menu choices
     print("\n* * MENU * *")
@@ -57,6 +56,6 @@ def main():
         else:
             print("Please choose an option from 1 through 5.")
 
-    # Run main when this file is executed directly
-    if __name__ == "__main__":
+# Run main when this file is executed directly
+if __name__ == "__main__":
         main()
