@@ -13,6 +13,14 @@
 # Test 2 
 # Inputs: 0, 100, x 
 # Expected Output: Total = 100, Average = 50 
+# Actual Output:
+# Pass/Fail: 
+#
+# Test 3 
+# Inputs: 80, 110, 70, x
+# Expected Output: 110 discarded, Total = 150, Average = 75
+# Actual Output: 
+# Pass/ Fail:
 
 print("The Test Scores application")
 print()
