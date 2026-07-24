@@ -1,4 +1,19 @@
-# display a welcome message
+# DEV 108 - Lab Activity 06 Debug Test Scores
+# 07/24/26
+# Katherine Luciano
+
+# Test Cases
+#
+# Test 1
+# Inputs: 100, 90, 80, x
+# Expected Output: Total = 270, Average = 90
+# Actual Output:
+# Pass/Fail:
+# 
+# Test 2 
+# Inputs: 0, 100, x 
+# Expected Output: Total = 100, Average = 50 
+
 print("The Test Scores application")
 print()
 print("Enter test scores")
