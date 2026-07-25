@@ -9,6 +9,8 @@
 # Expected Output: Total = 270, Average = 90
 # Actual Output: Total = 270, Average = 45
 # Pass/Fail: Fail
+# Retest Output: Total = 270, Average = 90
+# Retest Pass/Fail: Pass
 # 
 # Test 2 
 # Inputs: 0, 100, x 
