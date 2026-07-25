@@ -17,12 +17,16 @@
 # Expected Output: Total = 100, Average = 50 
 # Actual Output: Total = 100, Average = 25
 # Pass/Fail: Fail
+# Retest Output: Total = 100, Average = 50
+# Retest Pass/Fail: Pass
 #
 # Test 3 
 # Inputs: 80, 110, 70, x
 # Expected Output: 110 - discarded, Total = 150, Average = 75
 # Actual Output: Total = 150, Average = 30
-# Pass/ Fail: 
+# Pass/ Fail: Fail
+# Retest Output: Total = 150, Average: 75
+# Retest Pass/Fail: Pass
 
 # Debugging Change: I removed the first counter on line 43 b/c it counted the scores twice and were invalid.
 # The counter should increase only fater the score has passed the range check and is added to the total.
