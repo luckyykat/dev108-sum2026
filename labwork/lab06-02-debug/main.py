@@ -1,4 +1,4 @@
-# DEV 108 - Lab Activity 06 Debug Test Scores
+# DEV 108 - Lab Activity 06.2 Debug Test Scores
 # 07/24/26
 # Katherine Luciano
 
@@ -29,7 +29,7 @@
 # Retest Pass/Fail: Pass
 
 # Debugging Change: I removed the first counter on line 43 b/c it counted the scores twice and were invalid.
-# The counter should increase only fater the score has passed the range check and is added to the total.
+# The counter should increase only after the score has passed the range check and is added to the total.
  
 
 print("The Test Scores application")
@@ -65,3 +65,4 @@ print("Total Score:", score_total,
       "\nAverage Score:", average_score)
 print()
 print("Bye")
+
