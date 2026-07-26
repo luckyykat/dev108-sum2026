@@ -60,7 +60,7 @@ if play_again == "y":
             family_drag_name = drag_adjective + " " + drag_noun
             house_name = drag_noun
 
-        # Makeover Challenge Story
+            # Makeover Challenge Story
             print("\n--------------------------------------------------------------")
             print(player_name + ", here is your Makeover Challenge story:\n")
             print(
@@ -123,44 +123,44 @@ if play_again == "y":
             else:
                 dancer_phrase = "a huge crew of " + str(dancer_count) + " backup dancers"
 
-    # Girl group Challenge Story
-    print("\n--------------------------------------------------------------")
-    print(player_name + ", here is your Girl Group Challenge story:\n")
-    print(
-                    "The contestant joined the newest drag sensation, " + group_name + "."
-                )
-    print(
-                    "Together, the group recorded a " + music_genre + " anthem titled "
-                    "\"" + song_title + ".\""
-                )
-    print(
-                    "The song was about " + song_topic + ", and its unforgettable lyric "
-                    "was, \"" + silly_lyric + "!\""
-                )
-    print(
-                    "On the main stage, the group performed the " + dance_move + " with "
-                    + dancer_phrase + " while waving a " + stage_prop + "."
-                )
-    print(
-                    "RuPaul looked " + rupaul_emotion + " and declared the performance "
-                    "a drag masterpiece."
-                )
-    print(group_name + " had officially become the next big girl group!")
+            # Girl group Challenge Story
+            print("\n--------------------------------------------------------------")
+            print(player_name + ", here is your Girl Group Challenge story:\n")
+            print(
+                            "The contestant joined the newest drag sensation, " + group_name + "."
+                        )
+            print(
+                            "Together, the group recorded a " + music_genre + " anthem titled "
+                            "\"" + song_title + ".\""
+                        )
+            print(
+                            "The song was about " + song_topic + ", and its unforgettable lyric "
+                            "was, \"" + silly_lyric + "!\""
+                        )
+            print(
+                            "On the main stage, the group performed the " + dance_move + " with "
+                            + dancer_phrase + " while waving a " + stage_prop + "."
+                        )
+            print(
+                            "RuPaul looked " + rupaul_emotion + " and declared the performance "
+                            "a drag masterpiece."
+                        )
+            print(group_name + " had officially become the next big girl group!")
 
-    story_count += 1
-    print("--------------------------------------------------------------")
+        story_count += 1
+        print("--------------------------------------------------------------")
 
-    # Keeps track of how many stories created
-    if story_count == 1:
+        # Keeps track of how many stories created
+        if story_count == 1:
             print("\nYou have created 1 story.")
-    else:
+        else:
             print("\nYou have created", story_count, "stories.")
 
-    play_again = input("\nWould you like to play again? (y/n): ").lower()
+        play_again = input("\nWould you like to play again? (y/n): ").lower()
 
-    # Ask the user if they want to replay and farewell
-while play_again != "y" and play_again != "n":
-        print("Please enter y for yes or n for no.")
-        play_again = input("Would you like to play again? (y/n): ").lower()
+        # Ask the user if they want to replay and farewell
+        while play_again != "y" and play_again != "n":
+            print("Please enter y for yes or n for no.")
+            play_again = input("Would you like to play again? (y/n): ").lower()
 
 print("\nThank you for playing!\n")
