@@ -148,10 +148,10 @@ print("--------------------------------------------------------------")
 # Keeps track of how many stories created
 if story_count == 1:
         print("\nYou have created 1 story.")
-    else:
+else:
         print("\nYou have created", story_count, "stories.")
 
-    play_again = input("\nWould you like to play again? (y/n): ").lower()
+play_again = input("\nWould you like to play again? (y/n): ").lower()
 
     # Ask the user if they want to replay and farewell
 while play_again != "y" and play_again != "n":
