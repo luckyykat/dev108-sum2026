@@ -22,3 +22,15 @@ story_count = 0
 if play_again == "y":
     player_name = input("\nFirst what is your name? ")
     print("\nHello," + player_name + "! Welcome to Mad Libs Drag Race Edition.")
+
+# Ask the user to pick a storyline 
+while play_again == "y":
+    print("\nChoose your challenge:")
+    print(" a. The Makeover Challenege")
+    print("b. The Girl Group Challenge")
+
+    story_choice =("\nWhich challenge would you like? (a/b): ").lower()
+
+if story_choice == "a":
+    print("\nThe Makeover Chalenege")
+    print("Create a new memeber of your drag family!\n")
