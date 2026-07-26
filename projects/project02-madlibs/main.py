@@ -31,6 +31,26 @@ while play_again == "y":
 
     story_choice =("\nWhich challenge would you like? (a/b): ").lower()
 
+# Make Over Challenege Questions
 if story_choice == "a":
     print("\nThe Makeover Chalenege")
-    print("Create a new memeber of your drag family!\n")
+    print("Create a new member of your drag family!\n")
+
+    drag_name = input("1) What is your drag name? ")
+    partner_name = input("2) What is your makeover partner's regular name? ")
+    relationship = input("3) What is your relationship to this person? ")
+    drag_adjective = input(
+        "4) Enter a capitalized adjective for your partner's drag name: "
+        )
+    drag_noun = input("5) Enter a capitalized noun for your drag family name: ")
+    special_quality = input(
+        "6) Name a quality that makes them worthy of your House: "
+        )
+    outfit_color = input("7) Choose a color for your matching outfits: ")
+    outfit_material = input(
+        "8) Name an unusual material for the outfits: "
+        )
+    runway_move = input("9) Name a runway move or dance move: ")
+
+    family_drag_name = drag_adjective + " " + drag_noun
+    house_name = drag_noun
