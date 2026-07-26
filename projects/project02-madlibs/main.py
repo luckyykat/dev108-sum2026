@@ -54,3 +54,31 @@ if story_choice == "a":
 
     family_drag_name = drag_adjective + " " + drag_noun
     house_name = drag_noun
+
+# Makeover Challenge Story
+    print("\n--------------------------------------------------------------")
+    print(player_name + ", here is your Makeover Challenge story:\n")
+    print(
+            drag_name + " invited their " + relationship + ", " + partner_name + ", "
+            "to compete in the Makeover Challenge."
+        )
+    print(
+            partner_name + " nervously entered the workroom and prepared "
+            "for a complete drag transformation."
+        )
+    print(
+            "They welcomed the new queen into the House of " + house_name
+            + " and gave them the family drag name " + family_drag_name + "."
+        )
+    print(
+            "Together, they created matching " + outfit_color + " outfits made "
+            "entirely from " + outfit_material + "."
+        )
+    print(
+            "They finished the runway with a dramatic " + runway_move + ", and "
+            "the judges cheered."
+        )
+    print(
+            "Because of their incredible " + special_quality + ", " + family_drag_name
+            + " proved they truly belonged in the House of " + house_name + "!"
+        )
