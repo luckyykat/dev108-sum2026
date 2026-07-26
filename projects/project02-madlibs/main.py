@@ -82,3 +82,38 @@ if story_choice == "a":
             "Because of their incredible " + special_quality + ", " + family_drag_name
             + " proved they truly belonged in the House of " + house_name + "!"
         )
+
+# The Girl Group Challenge Questions
+elif story_choice == "b":
+        print("\n--- THE GIRL GROUP CHALLENGE ---")
+        print("Get ready to write and perform a brand-new drag anthem!\n")
+
+        group_name = input("1) Give your girl group a name: ")
+        music_genre = input("2) Name a type of music: ")
+        song_title = input("3) Give the group's song a title: ")
+        song_topic = input("4) What unusual topic is the song about? ")
+        silly_lyric = input("5) Enter a silly lyric or catchphrase: ")
+        dance_move = input("6) Name a signature dance move: ")
+        stage_prop = input("7) Name an unusual object to use as a prop: ")
+
+        # Makes sure the user eneters a number 1-10
+        dancer_count = int(input(
+            "8) Choose a number of backup dancers from 1 to 10: "
+        ))
+
+        while dancer_count < 1 or dancer_count > 10:
+            print("Please enter a whole number from 1 to 10.")
+            dancer_count = int(input(
+                "8) Choose a number of backup dancers from 1 to 10: "
+            ))
+
+        rupaul_emotion = input(
+            "9) Enter an emotion describing RuPaul's reaction: "
+        )
+
+        if dancer_count == 1:
+            dancer_phrase = "one fearless backup dancer"
+        elif dancer_count <= 5:
+            dancer_phrase = str(dancer_count) + " energetic backup dancers"
+        else:
+            dancer_phrase = "a huge crew of " + str(dancer_count) + " backup dancers"
