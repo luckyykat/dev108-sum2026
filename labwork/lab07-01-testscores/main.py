@@ -5,23 +5,27 @@
 # Import the statistics module
 import statistics
 
+# Program title and how to end the program
 def display_welcome():
-    print("The Test Scores program")
+    print("Welcome to The Test Scores program")
     print("Enter 'x' to exit")
     print("")
 
+# List that will hold all the users valid test scores
 def get_scores():
-    score_total = 0
-    counter = 0
+    scores = []
+
+# Ask the user for test scores until they end the program
     while True:
         score = input("Enter test score: ")
+
+# Give the user the completed list when they choose to exit
         if score == "x":
-            return  score_total, counter
+            return  scores
         else:
             score = int(score)
             if score >= 0 and score <= 100:
-                score_total += score
-                counter += 1 
+                scores.append(score) 
             else:
                 print("Test score must be from 0 through 100. " +
                       "Score discarded. Try again.")
