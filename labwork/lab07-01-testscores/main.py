@@ -55,14 +55,29 @@ def process_scores(scores):
     # Gets the median score
     median_score = statistics.median(scores)
 
-    
+    # Display all the test-score statistics
+    print()
+    print("Total: ", score_total)
+    print("Number of Scores: ", count)
+    print("Average Score: ", average)
+    print("Low Score: ", low_score)
+    print("High Score: ", high_score)
+    print("Median Score: ", median_score)
+
+# Display welcome message 
 def main():
     display_welcome()
-    score_total, count = get_scores()
-    process_scores(score_total, count)
+
+# Get the list of scores entered by the user
+    scores = get_scores()
+
+# Calculate and display the results for the scores
+process_scores(scores)
+
+# Display a closing message when the program is finished.
     print("")
     print("Bye!")
 
-# if started as the main module, call the main function
+# If started as the main module, call the main function.
 if __name__ == "__main__":
     main()
