@@ -15,11 +15,11 @@ def display_welcome():
 def get_scores():
     scores = []
 
-# Ask the user for test scores until they end the program
+    # Ask the user for test scores until they end the program
     while True:
         score = input("Enter test score: ")
 
-# Give the user the completed list when they choose to exit
+        # Give the user the completed list when they choose to exit
         if score == "x":
             return  scores
         else:
