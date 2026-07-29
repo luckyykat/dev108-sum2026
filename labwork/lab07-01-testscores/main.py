@@ -30,15 +30,20 @@ def get_scores():
                 print("Test score must be from 0 through 100. " +
                       "Score discarded. Try again.")
 
-def process_scores(score_total, count):
-    # calculate average score
-    average = score_total / count
-                
-    # format and display the result
-    print()
-    print("Score total:       ", score_total)
-    print("Number of Scores:  ", count)
-    print("Average Score:     ", average)
+def process_scores(scores):
+    # Check for an empty list before calculating
+    if len(scores) == 0:
+        print()
+        print("No scores were entered.")
+        return
+
+    # Loop the list and add each score to the total
+    score_total = 0
+    for score in scores:
+        score_total += score
+
+    # Find the number of scores stored in the list
+    count = len(scores)
 
 def main():
     display_welcome()
