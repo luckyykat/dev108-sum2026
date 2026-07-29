@@ -2,6 +2,9 @@
 # 07/29/26
 # Katherine Luciano 
 
+# Import the statistics module
+import statistics
+
 def display_welcome():
     print("The Test Scores program")
     print("Enter 'x' to exit")
