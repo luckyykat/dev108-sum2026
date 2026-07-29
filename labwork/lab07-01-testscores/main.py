@@ -1,4 +1,6 @@
-# Starting file for Exercise 6.1 in our textbook
+# DEV 108 Lab 7.1 - Test Scores
+# 07/29/26
+# Katherine Luciano 
 
 def display_welcome():
     print("The Test Scores program")
