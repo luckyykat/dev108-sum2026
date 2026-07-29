@@ -45,6 +45,17 @@ def process_scores(scores):
     # Find the number of scores stored in the list
     count = len(scores)
 
+    # Calculate the average and round it to the nearest whole number
+    average = round(score_total / count)
+
+    # Gets the lowest and highest scores in the list
+    low_score = min(scores)
+    high_score = max(scores)
+
+    # Gets the median score
+    median_score = statistics.median(scores)
+
+    
 def main():
     display_welcome()
     score_total, count = get_scores()
