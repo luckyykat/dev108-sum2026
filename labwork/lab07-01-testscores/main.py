@@ -7,7 +7,7 @@ import statistics
 
 # Program title and how to end the program
 def display_welcome():
-    print("Welcome to The Test Scores program")
+    print("The Test Scores program")
     print("Enter 'x' to exit")
     print("")
 
@@ -72,12 +72,12 @@ def main():
     scores = get_scores()
 
 # Calculate and display the results for the scores
-process_scores(scores)
+    process_scores(scores)
 
 # Display a closing message when the program is finished.
     print("")
     print("Bye!")
 
-# If started as the main module, call the main function.
+# Start the program by running the main function. 
 if __name__ == "__main__":
     main()
