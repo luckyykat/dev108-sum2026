@@ -16,7 +16,7 @@ def display_menu():
 
 def main():
     # Organizes each movie by name, year and price
-    movie_list [
+    movie_list = [
         ["Monty Python and the Holy Grail, 1975, 9.95"],
         ["On the Waterfront", 1954, 5.59],
         ["Cat on a Hot Tin Roof", 1958, 7.95]
