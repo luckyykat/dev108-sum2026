@@ -12,7 +12,15 @@ def display_menu():
     print("del -  Delete a movie")
     print("find - Find movies by a year")
     print("exit - Exit program")
-    print()    
+    print()
+
+def main():
+    # Organizes each movie by name, year and price
+    movie_list [
+        ["Monty Python and the Holy Grail, 1975, 9.95"],
+        ["On the Waterfront", 1954, 5.59],
+        ["Cat on a Hot Tin Roof", 1958, 7.95]
+    ]      
 
 def list(movie_list):
     if len(movie_list) == 0:
