@@ -30,17 +30,26 @@ def list(movie_list):
         i = 1
         for movie in movie_list:
             row = movie
-            print(str(i) + ". " + row[0] + " (" + str(row[1]) + ")")
+            print(str(i) + ". " + row[0] + " (" + str(row[1]) + ") @ " + str(row[2]))
             i += 1
         print()
 
+# Add a new movie to the list
 def add(movie_list):
     name = input("Name: ")
-    year = input("Year: ")
+    year = int(input("Year: "))
+    price = float(input(Price: ))
+
+    # Stores the name, year, and price in a new movie list
     movie = []
     movie.append(name)
     movie.append(year)
+    movie.append(price)
+
+    # Add the new movie to main menu list
     movie_list.append(movie)
+
+    # Confirms that a new movie was added 
     print(movie[0] + " was added.\n")
     
 def delete(movie_list):
@@ -50,6 +59,10 @@ def delete(movie_list):
     else:
         movie = movie_list.pop(number-1)
         print(movie[0] + " was deleted.\n")
+
+# Finds and dispays movies released in a specific year
+def find_by_year(movie_list):
+    year = int(input("Year: "))
         
 def main():
     movie_list = [["Monty Python and the Holy Grail", 1975],
