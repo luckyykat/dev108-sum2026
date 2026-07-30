@@ -1,8 +1,6 @@
-# Starting file for Exercise 6.2 from our textbook
-
-# Be sure to follow the instructions in our book to complete this lab activity.
-
-# Additionally, add a program title to the output please for the best user experience.
+# DEV 108 Lab 7.2 - Movie List
+# 07/29/26
+# Katherine Luciano
 
 def display_menu():
     print("COMMAND MENU")
