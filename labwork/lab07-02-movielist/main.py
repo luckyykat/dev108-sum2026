@@ -6,7 +6,7 @@
 def display_menu():
     print("The Movie List")
     print()
-    print("Command Menu")
+    print("COMMAND MENU")
     print("list - List all movies")
     print("add -  Add a movie")
     print("del -  Delete a movie")
