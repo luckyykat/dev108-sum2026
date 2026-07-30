@@ -2,11 +2,15 @@
 # 07/29/26
 # Katherine Luciano
 
+# Title and available commands 
 def display_menu():
-    print("COMMAND MENU")
+    print("The Movie List")
+    print()
+    print("Command Menu")
     print("list - List all movies")
     print("add -  Add a movie")
     print("del -  Delete a movie")
+    print("find - Find movies by a year")
     print("exit - Exit program")
     print()    
 
