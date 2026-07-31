@@ -2,8 +2,15 @@
 # 07/31/26
 # Katherine Luciano
 
+# Import the csv module and file name 
 import csv
 FILENAME = "trips.csv"
+
+# Trip data for the CSV file 
+def write_trips(trips):
+    with open(FILENAME, "W", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerows(trips)
 
 def get_miles_driven():
     while True:
@@ -28,7 +35,10 @@ def main():
     print("The Miles Per Gallon application")
     print()
 
+# List to store all trip data 
+    trips = []
     more = "y"
+    
     while more.lower() == "y":
         miles_driven = get_miles_driven()
         gallons_used = get_gallons_used()
