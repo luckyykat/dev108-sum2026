@@ -1,4 +1,9 @@
-## Starting file for Exercise 7.1
+# DEV 108 Lab 8.1 - MPG/CSV
+# 07/31/26
+# Katherine Luciano
+
+import csv
+FILENAME = "trips.csv"
 
 def get_miles_driven():
     while True:
