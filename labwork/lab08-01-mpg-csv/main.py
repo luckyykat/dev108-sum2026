@@ -30,7 +30,7 @@ def list_trips(trips):
 
     for i in range(0, len(trips)):
         trip = trips[i]
-        print(str(trip[0]) + "\t\t" + str(trip[1]) + "\t\t" + str(trip[2])
+        print(str(trip[0]) + "\t\t" + str(trip[1]) + "\t\t" + str(trip[2]))
 
     print()
 
