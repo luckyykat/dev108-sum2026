@@ -57,8 +57,9 @@ def main():
     print("The Miles Per Gallon application")
     print()
 
-    # List to store all trip data 
-    trips = []
+    # Display the exiting trip data
+    trips = read_trips()
+    list_trips(trips)
     more = "y"
     
     while more.lower() == "y":
@@ -75,6 +76,9 @@ def main():
         trip.append(gallons_used)
         trip.append(mpg)
         trips.append(trip)
+        # Save and display new trip
+        write_trips(trip)
+        list_trips(trips)
         
         more = input("More entries? (y or n): ")
 
