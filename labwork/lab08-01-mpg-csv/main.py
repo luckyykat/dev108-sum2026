@@ -35,7 +35,7 @@ def main():
     print("The Miles Per Gallon application")
     print()
 
-# List to store all trip data 
+    # List to store all trip data 
     trips = []
     more = "y"
     
@@ -55,7 +55,10 @@ def main():
         trips.append(trip)
         
         more = input("More entries? (y or n): ")
-    
+
+    # Write all trip data after the user is done
+    write_trips(trips)
+
     print("Bye")
 
 if __name__ == "__main__":
