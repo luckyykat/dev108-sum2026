@@ -82,9 +82,6 @@ def main():
         
         more = input("More entries? (y or n): ")
 
-    # Write all trip data after the user is done
-    write_trips(trips)
-
     print("Bye")
 
 if __name__ == "__main__":
