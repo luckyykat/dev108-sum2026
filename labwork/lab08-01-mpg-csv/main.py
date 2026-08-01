@@ -12,6 +12,18 @@ def write_trips(trip):
         writer = csv.writer(file)
         writer.writerow(trip)
 
+# Read the existing CSV data into the trips list
+def read_trips():
+    trips = []
+
+    with open(FILENAME, newline="") as file:
+        reader = csv.reader(file)
+
+        for row in reader:
+            trips.append(row)
+
+    return trips
+
 def get_miles_driven():
     while True:
         miles_driven = float(input("Enter miles driven :     "))                    
