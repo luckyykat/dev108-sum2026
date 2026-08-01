@@ -1,4 +1,4 @@
-# DEV 108 Lab 8.1 - MPG/CSV
+# DEV 108 Lab 8.1 & 8.2 - MPG/CSV
 # 07/31/26
 # Katherine Luciano
 
@@ -7,10 +7,10 @@ import csv
 FILENAME = "trips.csv"
 
 # Trip data for the CSV file 
-def write_trips(trips):
-    with open(FILENAME, "w", newline="") as file:
+def write_trips(trip):
+    with open(FILENAME, "a", newline="") as file:
         writer = csv.writer(file)
-        writer.writerows(trips)
+        writer.writerow(trip)
 
 def get_miles_driven():
     while True:
