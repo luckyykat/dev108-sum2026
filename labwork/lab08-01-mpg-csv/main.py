@@ -24,6 +24,16 @@ def read_trips():
 
     return trips
 
+# Display all the trip data on the screen for the user 
+def list_trips(trips):
+    print("Distance\tGallons\t\tMPG")
+
+    for i in range(0, len(trips)):
+        trip = trips[i]
+        print(str(trip[0])) + "\t\t" + str(trip[1]) + "\t\t" + str(trip[2])
+
+    print()
+
 def get_miles_driven():
     while True:
         miles_driven = float(input("Enter miles driven :     "))                    
