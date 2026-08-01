@@ -8,7 +8,7 @@ FILENAME = "trips.csv"
 
 # Trip data for the CSV file 
 def write_trips(trips):
-    with open(FILENAME, "W", newline="") as file:
+    with open(FILENAME, "w", newline="") as file:
         writer = csv.writer(file)
         writer.writerows(trips)
 
