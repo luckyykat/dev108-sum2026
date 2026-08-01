@@ -46,6 +46,13 @@ def main():
         mpg = round((miles_driven / gallons_used), 2)
         print("Miles Per Gallon:\t" + str(mpg))
         print()
+
+        # Store current trip data in the trips list
+        trip = []
+        trip.append(miles_driven)
+        trip.append(gallons_used)
+        trip.append(mpg)
+        trips.append(trip)
         
         more = input("More entries? (y or n): ")
     
