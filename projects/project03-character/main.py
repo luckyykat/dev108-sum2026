@@ -52,7 +52,7 @@ def main():
         print("Kindness: " + str(kindness))
         print("Cuteness: " + str(cuteness))
         print("Energy: " + str(energy))
-        print("Friendship " + str(friendship))
+        print("Friendship: " + str(friendship))
         print("Creativity: " + str(creativity))
         print()
 
