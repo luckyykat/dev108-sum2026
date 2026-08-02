@@ -19,8 +19,7 @@ def main():
     create_character = input(
         "Would you like to generate a Sanrio character? yes or no: "
     )
-if __name__ == "__main__":
-    main()
+
     # Loop repeats the generator while the user answers yes
     while create_character.lower() == "yes":
         character_name = input("What would you like to name your character?: ")
@@ -31,3 +30,5 @@ if __name__ == "__main__":
         create_character = input(
             "Would you like to generate another Sanrio character? yes or no: "
         )
+if __name__ == "__main__":
+    main()
