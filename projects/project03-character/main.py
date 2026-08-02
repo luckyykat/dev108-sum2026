@@ -86,6 +86,21 @@ def main():
             print(character_name + " (" + character_type + ") (Baking Points: " + str(baking_points) + ")")
             print("==========================================\n")
 
+            # Battle loop continues while both bakers have points remaining
+            round_num = 1
+            while baking_points > 0 and opponent_hp > 0:
+                print("--- Round " + str(round_num) + " ---")
+
+                # Player bakes & opponent attacks 
+                player_bake = random.randint(10, 25)
+                opponent_hp = opponent_hp - player_bake
+                print(character_name + " baked a delicious pastry and dealt " + str(player_bake) + " points of damage!")
+
+                # Check if opponent is defeated before they counter-attack
+                if opponent_hp <= 0:
+                    print(opponent_type + "'s cake collapsed!")
+                    break
+
         create_character = input(
             "Would you like to generate another Sanrio character? yes or no: "
         )
