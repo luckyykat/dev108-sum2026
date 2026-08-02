@@ -44,9 +44,16 @@ def main():
         cuteness = random.randint(1, 10)
         energy = random.randint( 1, 10)
         friendship = random.randint(1, 10)
+        creativity = random.randint(1, 10)
+       
         print()
         print("Welcome, " + character_name + "!")
         print("Sanrio Character: " + character_type)
+        print("Kindness: " + str(kindness))
+        print("Cuteness: " + str(cuteness))
+        print("Energy: " + str(energy))
+        print("Friendship " + str(friendship))
+        print("Creativity: " + str(creativity))
         print()
 
         create_character = input(
