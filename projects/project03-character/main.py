@@ -39,6 +39,11 @@ def main():
 
         character_number = random.randint(1,5)
         character_type = get_character_type(character_number)
+        # Five random character traits
+        kindness = random.randint(1, 10)
+        cuteness = random.randint(1, 10)
+        energy = random.randint( 1, 10)
+        friendship = random.randint(1, 10)
         print()
         print("Welcome, " + character_name + "!")
         print("Sanrio Character: " + character_type)
