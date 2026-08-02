@@ -28,6 +28,14 @@ def get_character_type(character_number):
 # Character generator
 def main():
     display_welcome()
+    # List of accessories
+    accessories = [
+        "red bow",
+        "black jester hat",
+        "bow tie",
+        "brown beret",
+        "pink hood"
+    ]
 
     create_character = input(
         "Would you like to generate a Sanrio character? yes or no: "
