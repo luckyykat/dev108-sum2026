@@ -124,11 +124,11 @@ def main():
                     print("Oh no! " + opponent_type + " won the Bake Off this time!")
                 print("=============================")
 
-                # Ask if the user wants to generate another character
-                create_character = input("\nWould you like to generate another Sanrio character? yes or no: ").lower()
+            # Ask if the user wants to generate another character
+            create_character = input("\nWould you like to generate another Sanrio character? yes or no: ").lower()
 
-        # Thank the user and farewell message
-        print("\nThank you for playing the Sanrio Character Bake Off! Goodbye!")
+    # Thank the user and farewell message
+    print("\nThank you for playing the Sanrio Character Bake Off! Goodbye!")
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
