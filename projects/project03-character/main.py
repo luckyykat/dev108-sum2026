@@ -43,7 +43,7 @@ def main():
 
     # Loop repeats the generator while the user answers yes
     while create_character.lower() == "yes":
-        character_name = input("What would you like to name your character?: ")
+        user_name = input("What is your name?: ")
 
         character_number = random.randint(1,5)
         character_type = get_character_type(character_number)
@@ -59,7 +59,7 @@ def main():
         creativity = random.randint(1, 10)
        
         print()
-        print("Welcome, " + character_name + "!")
+        print("Welcome, " + user_name + "!")
         print("Sanrio Character: " + character_type)
         print("Accessory: " + accessory)
         print("Kindness: " + str(kindness))
