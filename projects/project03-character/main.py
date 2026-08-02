@@ -24,7 +24,7 @@ def main():
     while create_character.lower() == "yes":
         character_name = input("What would you like to name your character?: ")
         print()
-        print("Welcome," + character_name + "!")
+        print("Welcome, " + character_name + "!")
         print()
 
         create_character = input(
