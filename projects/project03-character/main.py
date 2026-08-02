@@ -57,6 +57,9 @@ def main():
         energy = random.randint( 1, 10)
         friendship = random.randint(1, 10)
         creativity = random.randint(1, 10)
+
+        # Random points for bake off
+        baking_points = random.randit(50, 100)
        
         print()
         print("Welcome, " + character_name + "!")
@@ -67,6 +70,7 @@ def main():
         print("Energy: " + str(energy))
         print("Friendship: " + str(friendship))
         print("Creativity: " + str(creativity))
+        print("Baking Points: " + str(baking_points))
         print()
 
         create_character = input(
