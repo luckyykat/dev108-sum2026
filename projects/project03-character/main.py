@@ -75,11 +75,16 @@ def main():
         print()
 
         # Ask user if they want to enter the Bake Off Battle 
-        battle_choice = input("\nWould you like to enter a Battle Bake Off with this character? yes or no: ").lower()
+        battle_choice = input("\nWould you like to enter a Bake Off Battle with this character? yes or no: ").lower()
         if battle_choice == "yes":
             #Generate oppenents stats
             opponent_type = get_character_type(random.randint(1, 5))
             opponent_hp = random.randint(50, 100)
+
+            print("\n*** Bake Off Battle Start ***")
+            print("Opponent: " + opponent_type + " (Baking Points: " + str(opponent_hp)+ ")")
+            print(character_name + " (" + character_type + ") (Baking Points: " + str(baking_points) + ")")
+            print("==========================================\n")
 
         create_character = input(
             "Would you like to generate another Sanrio character? yes or no: "
