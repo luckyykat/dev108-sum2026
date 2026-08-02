@@ -7,9 +7,9 @@ import random
 
 # Display welcome message
 def display_welcome(): 
-    print("********************************")
-    print("   Sanrio Character Generator")
-    print("********************************")
+    print("********************************************")
+    print(" Welcome to the Sanrio Character Generator")
+    print("********************************************")
     print()
 
     # Select a sanrio character using random number 
