@@ -101,6 +101,21 @@ def main():
                     print(opponent_type + "'s cake collapsed!")
                     break
 
+                # Opponent bakes & attacks player
+                opponent_bake = random.randint(10, 25)
+                baking_points = baking_points - opponent_bake
+                print(opponent_type + " baked a sweet treat and dealt " + str(opponent_bake) + " points of damage!")
+
+                # Random healing boost
+                heal_chance = random.randint(1, 3)
+                if heal_chance == 1 and baking_points > 0:
+                    heal_amount = random.randint(5, 15)
+                    baking_points = baking_points + heal_amount
+                    print("Sugar sparkle scone added " + character_name + " got a bonus sugar boost and gained " + str(heal_amount) + " Baking Points!")
+
+                print(character_name + " HP: " + str(max(0, baking_points)) + " | " + opponent_type + " HP: " + str(max(0, opponent_hp)) + "\n")
+                round_num = round_num + 1
+
         create_character = input(
             "Would you like to generate another Sanrio character? yes or no: "
         )
