@@ -59,7 +59,7 @@ def main():
         creativity = random.randint(1, 10)
 
         # Random points for bake off
-        baking_points = random.randit(50, 100)
+        baking_points = random.randint(50, 100)
        
         print()
         print("Welcome, " + character_name + "!")
@@ -116,8 +116,19 @@ def main():
                 print(character_name + " HP: " + str(max(0, baking_points)) + " | " + opponent_type + " HP: " + str(max(0, opponent_hp)) + "\n")
                 round_num = round_num + 1
 
-        create_character = input(
-            "Would you like to generate another Sanrio character? yes or no: "
-        )
-if __name__ == "__main__":
-    main()
+                # Declare winner
+                print("=============================")
+                if baking_points > 0:
+                    print("Victory! " + character_name + " won the Bake Off!")
+                else:
+                    print("Oh no! " + opponent_type + " won the Bake Off this time!")
+                print("=============================")
+
+                # Ask if the user wants to generate another character
+                create_character = input("\nWould you like to generate another Sanrio character? yes or no: ").lower()
+
+        # Thank the user and farewell message
+        print("\nThank you for playing the Sanrio Character Bake Off! Goodbye!")
+
+    if __name__ == "__main__":
+        main()
