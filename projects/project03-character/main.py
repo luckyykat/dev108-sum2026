@@ -47,6 +47,10 @@ def main():
 
         character_number = random.randint(1,5)
         character_type = get_character_type(character_number)
+
+        accessory_number = random.randint(0,4)
+        accessory = accessories[accessory_number]
+                                
         # Five random character traits
         kindness = random.randint(1, 10)
         cuteness = random.randint(1, 10)
@@ -57,6 +61,7 @@ def main():
         print()
         print("Welcome, " + character_name + "!")
         print("Sanrio Character: " + character_type)
+        print("Accessory: " + accessory)
         print("Kindness: " + str(kindness))
         print("Cuteness: " + str(cuteness))
         print("Energy: " + str(energy))
