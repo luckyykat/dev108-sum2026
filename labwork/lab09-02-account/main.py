@@ -3,14 +3,15 @@
 # Katherine Luciano
 
 def main():
+    # Program title
+    print("Welcome to the Account Validaton Program")
+    print()
+
     full_name = get_full_name()
     print()
     
     password = get_password()
-    print()
-    
-    first_name = get_first_name(full_name)   
-    print(f"Hi {first_name}, thanks for creating an account.")
+    print()  
 
     email = get_email()
     print()
@@ -20,7 +21,10 @@ def main():
 
     first_name = get_first_name(full_name)
     print(f"Hello {first_name}, thank you for creating an accouunt.")
-    print(f"We'll text your confirmation code to this number: {phone}")             
+    print(f"We'll text your confirmation code to this number: {phone}")
+
+    # Exit message
+    print("Thank you for using the Account Validation Program, take care!")             
     
 def get_full_name():
     while True:
@@ -62,6 +66,7 @@ def get_email():
 def get_phone():
     while True:
         phone = input("Enter phone number:    ").strip()
+
         
 if __name__ == "__main__":
     main()
