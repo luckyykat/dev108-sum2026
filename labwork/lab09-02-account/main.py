@@ -50,6 +50,18 @@ def get_password():
                   f"with at least one digit and one uppercase letter.")
         else:
             return password
+
+def get_email():
+    while True:
+        email = input("Enter email address:    ").strip().lower()
+        if "@" in email and email.endswith(".com"):
+            return email
+        else:
+            print("Please enter a 10 digit phone number.")
+
+def get_phone():
+    while True:
+        phone = input("Enter phone number:    ").strip()
         
 if __name__ == "__main__":
     main()
