@@ -33,6 +33,10 @@ while choice == "y":
     discount = discount.quantize(Decimal("1.00"), ROUND_HALF_UP)                                
     subtotal = order_total - discount
     tax_percent = Decimal(".05")
+    # calculate shipping cost
+    shipping_cost = subtotal * Decimal("0.085")
+    shipping_cost = shipping_cost.quantize(Decimal("1.00"), ROUND_HALF_UP)
+    tax_percent = Decimal(".05")
     sales_tax = subtotal * tax_percent
     sales_tax = sales_tax.quantize(Decimal("1.00"), ROUND_HALF_UP)
 
@@ -53,7 +57,7 @@ while choice == "y":
 
     # display the results
     print(f"{'Order total:':{s1}} {order_total_str:{s2}}")
-    print(f"{'Discount amount:':{s2}} {discount_str:{s2}}")
+    print(f"{'Discount amount:':{s1}} {discount_str:{s2}}")
     print(f"{'Subtotal:':{s1}} {subtotal_str:{s2}}")
     print(f"{'Sales tax:':{s1}} {sales_tax_str:{s2}}")
     print(f"{'Invoice total:':{s1}} {invoice_total_str:{s2}}")
