@@ -47,6 +47,10 @@ while choice == "y":
     sales_tax_str = lc.currency(sales_tax, grouping=True)
     invoice_total_str = lc.currency(invoice_total, grouping=True)
 
+    # specifier variables for column widths
+    s1 = 20
+    s2 = ">12"
+    
     # display the results
     print(f"Order total:        {order_total:10,}")
     print(f"Discount amount:    {discount:10,}")
