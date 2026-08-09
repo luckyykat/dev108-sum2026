@@ -74,6 +74,11 @@ def get_phone():
     while True:
         phone = input("Enter phone number:    ").strip()
 
+        # Clean string by removing non didgit characters
+        for char in [" ", "-", "(", ")", "."]:
+            phone = phone.replace(char, "") 
+
+
 
 
         
