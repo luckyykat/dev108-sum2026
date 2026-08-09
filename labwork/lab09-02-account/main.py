@@ -1,4 +1,6 @@
-# Starting file for Exercise 10-1
+# DEV 108 - Enhance the Create Account Program
+# 07/09/26
+# Katherine Luciano
 
 def main():
     full_name = get_full_name()
