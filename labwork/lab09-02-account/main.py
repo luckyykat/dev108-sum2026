@@ -10,7 +10,17 @@ def main():
     print()
     
     first_name = get_first_name(full_name)   
-    print(f"Hi {first_name}, thanks for creating an account.")             
+    print(f"Hi {first_name}, thanks for creating an account.")
+
+    email = get_email()
+    print()
+
+    phone = get_phone()
+    print()
+
+    first_name = get_first_name(full_name)
+    print(f"Hello {first_name}, thank you for creating an accouunt.")
+    print(f"We'll text your confirmation code to this number: {phone}")             
     
 def get_full_name():
     while True:
