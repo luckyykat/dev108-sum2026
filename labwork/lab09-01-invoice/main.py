@@ -2,13 +2,15 @@
 # 08/08/26
 # Katherine Luciano
 
-
-from decimal import Decimal
-from decimal import ROUND_HALF_UP
+from decimal import Decimal, ROUND_HALF_UP
+import locale as lc
 
 # display a title
 print("The Invoice program")
 print()
+
+# locale for US currency formatting
+lc.setlocale(lc.LC_ALL, "en_US")
 
 choice = "y"
 while choice == "y":
