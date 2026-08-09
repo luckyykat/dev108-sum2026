@@ -76,10 +76,15 @@ def get_phone():
 
         # Clean string by removing non didgit characters
         for char in [" ", "-", "(", ")", "."]:
-            phone = phone.replace(char, "") 
+            phone = phone.replace(char, "")
 
-
-
+        # Verify numbers are excatly 10 digits
+        if len(phone) == 10 and phone.isdigit():
+            # Format digits into dot notation
+            formatted_phone = f"{phone[:3]}.{phone[3:6]}.{phone[6:]}"
+            return formatted_phone
+        else:
+            print("Please eneter a 10 didgit phone number")
 
         
 if __name__ == "__main__":
