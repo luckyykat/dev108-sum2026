@@ -4,7 +4,7 @@
 
 def main():
     # Program title
-    print("Welcome to the Account Validaton Program")
+    print("Welcome to the Account Validation Program")
     print()
 
     # Get user information
@@ -22,7 +22,7 @@ def main():
 
     # Get user first name and show confirmation message
     first_name = get_first_name(full_name)
-    print(f"Hello {first_name}, thank you for creating an accouunt.")
+    print(f"Hello {first_name}, thank you for creating an account.")
     print(f"We'll text your confirmation code to this number: {phone}")
 
     # Exit message
