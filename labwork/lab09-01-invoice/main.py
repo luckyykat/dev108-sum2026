@@ -34,8 +34,18 @@ while choice == "y":
     subtotal = order_total - discount
     tax_percent = Decimal(".05")
     sales_tax = subtotal * tax_percent
-    sales_tax = sales_tax.quantize(Decimal("1.00"), ROUND_HALF_UP)                                 
-    invoice_total = subtotal + sales_tax
+    sales_tax = sales_tax.quantize(Decimal("1.00"), ROUND_HALF_UP)
+
+    # added shipping cost in total                                 
+    invoice_total = subtotal + shipping_cost + sales_tax
+
+    # currency strings using locale 
+    order_total_str = lc.currency(order_total, grouping=True)
+    discount_str = lc.currency(discount, grouping=True)
+    subtotal_str = lc.currency(subtotal, grouping=True)
+    shipping_cost_str = lc.currency(shipping_cost, grouping=True)
+    sales_tax_str = lc.currency(sales_tax, grouping=True)
+    invoice_total_str = lc.currency(invoice_total, grouping=True)
 
     # display the results
     print(f"Order total:        {order_total:10,}")
