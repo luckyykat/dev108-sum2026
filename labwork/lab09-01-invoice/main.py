@@ -10,7 +10,7 @@ print("The Invoice program")
 print()
 
 # locale for US currency formatting
-lc.setlocale(lc.LC_ALL, "")
+lc.setlocale(lc.LC_ALL, "en_US.UTF-8")
 
 choice = "y"
 while choice == "y":
