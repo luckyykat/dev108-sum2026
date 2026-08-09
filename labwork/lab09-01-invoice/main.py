@@ -50,13 +50,13 @@ while choice == "y":
     # specifier variables for column widths
     s1 = 20
     s2 = ">12"
-    
+
     # display the results
-    print(f"Order total:        {order_total:10,}")
-    print(f"Discount amount:    {discount:10,}")
-    print(f"Subtotal:           {subtotal:10,}")
-    print(f"Sales tax:          {sales_tax:10,}")
-    print(f"Invoice total:      {invoice_total:10,}")
+    print(f"{'Order total:':{s1}} {order_total_str:{s2}}")
+    print(f"{'Discount amount:':{s2}} {discount_str:{s2}}")
+    print(f"{'Subtotal:':{s1}} {subtotal_str:{s2}}")
+    print(f"{'Sales tax:':{s1}} {sales_tax_str:{s2}}")
+    print(f"{'Invoice total:':{s1}} {invoice_total_str:{s2}}")
     print()
 
     choice = input("Continue? (y/n): ")    
