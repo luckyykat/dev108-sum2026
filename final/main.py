@@ -64,5 +64,27 @@ def make_email(first_name, last_name, human_id):
     first_name = first_name.lower()
     last_name = last_name.lower()
     email = "{}.{}{}@mars.org".format(first_name, last_name, human_id)
-    
+
     return email
+
+# This function creates a password w/ lowercase, uppercase, numbers and symbols
+def make_password():
+    lower = "abcdefghijklmnopqrstuvwxyz"
+    upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    numbers = "0123456789"
+    symbols = "!@#$%&"
+
+    password = ""
+    password = password + random.choice(lower)
+    password = password + random.choice(upper)
+    password = password + random.choice(numbers)
+    password = password + random.choice(symbols)
+
+    all_chars = lower + upper + numbers + symbols
+
+    while len(password) < 10:
+        password = password + random.choice(all_chars)
+
+    return password
+
+
