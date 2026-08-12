@@ -21,4 +21,29 @@ def load_humans():
         for row in reader:
             humans.append(row)
 
-    return humans 
+    return humans
+
+# This function saves all humans back to the csv file
+def save_humans(humans):
+    with open(FILE_NAME, "w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerows(humans)
+
+# This function asks for text and restricts a blank answer
+def get_text(prompt):
+    answer = input(prompt).strip()
+
+    while answer == "":
+        print("Please do not leave this blank.")
+
+    return answer
+
+# This function asks for users age and makes sure the answer the user submits is a number 
+def get_age():
+    age = input("Age: ").strip()
+
+    while age.isdigit() == False:
+        print("Please enter the age using numbers only.")
+        age = input("Age: ").strip()
+
+    return age
