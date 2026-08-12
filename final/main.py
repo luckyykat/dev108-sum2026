@@ -47,3 +47,14 @@ def get_age():
         age = input("Age: ").strip()
 
     return age
+
+# This function creates an id number that is not already used
+def make_id(humans):
+    used = []
+
+    for human in humans:
+        used.append(humans[0])
+
+    new_id = str(random.randint(1000, 9999))
+
+    return new_id
