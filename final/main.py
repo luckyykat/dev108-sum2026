@@ -58,3 +58,11 @@ def make_id(humans):
     new_id = str(random.randint(1000, 9999))
 
     return new_id
+
+# This function gives the user an email from name and id
+def make_email(first_name, last_name, human_id):
+    first_name = first_name.lower()
+    last_name = last_name.lower()
+    email = "{}.{}{}@mars.org".format(first_name, last_name, human_id)
+    
+    return email
