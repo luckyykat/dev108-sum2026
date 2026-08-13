@@ -100,3 +100,17 @@ def make_pod():
     pod = "{} - Pod {}".format(habitat, pod_number)
 
     return pod 
+
+# This function creates a Mars Base note for the user
+def make_note():
+    notes = []
+    notes.append("Greenhouse soil team candidate")
+    notes.append("Rover resource run recommended")
+    notes.append("Assigned to crop nutrient research")
+    notes.append("Extra oxygen safety training complete")
+    notes.append("Possible Erebus Montes exploration crew")
+    notes.append("Martian meal prep volunteer")
+
+    note = random.choice(notes)
+
+    return note
