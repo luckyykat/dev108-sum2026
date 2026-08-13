@@ -87,4 +87,16 @@ def make_password():
 
     return password
 
+# This function assigns a random habitat and pod
+def make_pod():
+    habitats = []
+    habitats.append("Erebus Habitat")
+    habitats.append("Amazonis Habitat")
+    habitats.append("Greenhouse Habitat")
+    habitats.append("Research Habitat")
 
+    habitat = random.choice(habitats)
+    pod_number = random.randint(1, 5)
+    pod = "{} - Pod {}".format(habitat, pod_number)
+
+    return pod 
