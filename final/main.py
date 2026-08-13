@@ -153,3 +153,16 @@ def create_account():
     print("Password: {}".format(password))
     print("Living Pod: {}".format(pod))
     print("Note: {}".format(note))
+
+# This function puts the humans in a list 
+def list_humans():
+    humans = load_humans()
+
+    print("\nAll Mars Base Humans")
+    print("------------------------")
+
+    if len(humans) == 0:
+        print("No humans are saved yet.")
+    else:
+        print("{:<15} {:<15} {:<30} {:<5} {:<20}".format("First", "Last", "Email", "Age", "Pod"))
+        print("-" * 90)
