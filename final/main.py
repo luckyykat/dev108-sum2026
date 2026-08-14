@@ -189,3 +189,32 @@ def search_last_name():
 
     if found == False:
         print("No matching humans were found.")
+
+# This function shows how full each pod is 
+def pod_status():
+    humans = load_humans()
+    pods = []
+
+    for human in humans:
+        if human[6] not in pods:
+            pods.append(human[6])
+
+    print("\nMars Base Living Pod Status")
+    print("-------------------------------")
+
+    if len(pods) == 0:
+        print("No pod assignments yet.")
+    else:
+        for pod in pods:
+            count = 0
+
+            for human in human:
+                if human[6] == pod:
+                    count = count + 1
+            spaces = POD_LIMIT - count
+
+            if spaces < 0:
+                spaces = 0 
+
+            print("{}: {} assigned, {} spaces remaining".format(pod, count, spaces))
+            
