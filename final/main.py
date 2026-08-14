@@ -166,3 +166,6 @@ def list_humans():
     else:
         print("{:<15} {:<15} {:<30} {:<5} {:<20}".format("First", "Last", "Email", "Age", "Pod"))
         print("-" * 90)
+
+        for human in humans:
+            print("{:<15} {:<15} {:<30} {:5} {:<20}".format(human[1], human[2], human[4], human[3], human[6]))
