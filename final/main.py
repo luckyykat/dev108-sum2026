@@ -238,3 +238,28 @@ def admin_report():
                 print("{:<6} {:<12} {:<12} {:<28} {:<12} {}".format(human[0], human[1], human[2], human[4], human[5], human[7]))
             else:
                 print("Access denied. Incorrect password.")
+
+# This function deletes one human account by ID
+def delete_account():
+    humans = load_humans()
+    human_id = get_text("Enter the ID number to delete: ")
+    found = False
+    new_list = []
+
+    for human in humans:
+        if human [0] == human_id:
+            found = True
+            print("Found: {} {} in {}".format(human[1], human[2], human[6]))
+            sure = input("Are you sure you want to delete this account? yes or no: ").lower()
+
+            if sure == "yes":
+                print("Account deleted.")
+            else:
+                new_list.append(human)
+                print("Human account deleted.")
+        else:
+            new_list.append(human)
+    if found == True:
+        save_humans(new_list)
+    else:
+        print("No human with that ID was found.")
