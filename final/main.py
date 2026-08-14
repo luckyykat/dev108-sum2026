@@ -217,4 +217,24 @@ def pod_status():
                 spaces = 0 
 
             print("{}: {} assigned, {} spaces remaining".format(pod, count, spaces))
-            
+
+ # This function shows the full report if admin password is correct
+def admin_report():
+    password = input("Enter admin password: ")
+
+    if password == ADMIN_PASSWORD:
+        humans = load_humans()
+
+        print("\nMars Base Admin Human Population Report")
+        print("-------------------------------------------")
+
+        if len(humans) == 0:
+            print("No humans are saved yet.")
+        else:
+            print("{:<6} {:<12} {:<12} {:<28} {:<12} {}".format("ID", "First", "Last", "Email", "Password", "Notes"))
+            print("-" * 100)
+
+            for human in humans:
+                print("{:<6} {:<12} {:<12} {:<28} {:<12} {}".format(human[0], human[1], human[2], human[4], human[5], human[7]))
+            else:
+                print("Access denied. Incorrect password.")
