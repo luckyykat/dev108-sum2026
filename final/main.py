@@ -169,3 +169,23 @@ def list_humans():
 
         for human in humans:
             print("{:<15} {:<15} {:<30} {:5} {:<20}".format(human[1], human[2], human[4], human[3], human[6]))
+
+# This function searches the humans by last name
+def search_last_name():
+    humans = load_humans()
+    search_name = get_text("Enter a last name to search: ").lower()
+    found = False
+
+    print("\nSearch Results")
+    print("-------------------")
+
+    for human in humans:
+        if human[2].lower() == search_name:
+            found = True
+            print("Name: {} {}".format(human[1], human[2]))
+            print("Pod: {}".format(human[6]))
+            print("Notes: {}".format(human[7]))
+            print()
+
+    if found == False:
+        print("No matching humans were found.")
