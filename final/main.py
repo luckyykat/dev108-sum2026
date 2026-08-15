@@ -120,7 +120,7 @@ def make_note():
 def create_account():
     humans = load_humans()
 
-    print("\nCreate a new Mars Base HUman Account")
+    print("\nCreate a new Mars Base Human Account")
     print("----------------------------------------")
 
     first_name = get_text("First name: ")
@@ -300,7 +300,7 @@ def special_mission():
 
 # This function shows the menu and checks for a menu choice 
 def show_menu():
-    print("\nMars Base - HUman Account Setup System")
+    print("\nMars Base - Human Account Setup System")
     print("------------------------------------------")
     print("1. Create a new Mars Base human account")
     print("2. List all Mars Base humans")
@@ -317,7 +317,7 @@ def show_menu():
         print("That is not a valid menu choice")
         choice = input("Choose an option from 1 to 8: ")
 
-        return choice
+    return choice
 
 # This function keeps the program running until the user exits
 def main():
