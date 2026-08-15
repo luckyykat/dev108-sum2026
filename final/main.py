@@ -146,7 +146,7 @@ def create_account():
     humans.append(new_human)
     save_humans(humans)
 
-    print("\nNew Mars Base HUman Account Created")
+    print("\nNew Mars Base Human Account Created")
     print("---------------------------------------")
     print("ID: {}".format(human_id))
     print("Name: {} {}".format(first_name, last_name))
