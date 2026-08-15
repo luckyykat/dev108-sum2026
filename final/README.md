@@ -27,8 +27,19 @@ The program creates a new human account with an ID, email, password, pod assignm
 ## Test Case 2: Search by Last Name
 Input: 
 - Menu choice: 3
-- Last Name: Lightyear
+- Last name: Lightyear
 
 Expected Result: 
 The program finds Buzz Lightyear and displays the pod assignment and notes. 
+
+## Test Case 3: Admin Report
+Input:
+- Menu choice: 5
+- Password: MarsBaseAdmin4
+
+Expected Result: 
+The program displays the full admin report with ID, name, email, password, and notes.
+
+## Incorrect Input Handling
+The program ensures that menu selections are valid numbers between 1 and 8. It also verifies that names aren’t empty and that age is entered using only numbers.
 
