@@ -238,8 +238,8 @@ def admin_report():
 
             for human in humans:
                 print("{:<6} {:<12} {:<12} {:<28} {:<12} {}".format(human[0], human[1], human[2], human[4], human[5], human[7]))
-            else:
-                print("Access denied. Incorrect password.")
+    else:
+        print("Access denied. Incorrect password.")
 
 # This function deletes one human account by ID
 def delete_account():
