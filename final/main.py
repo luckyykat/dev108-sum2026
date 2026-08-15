@@ -148,8 +148,9 @@ def create_account():
 
     print("\nNew Mars Base HUman Account Created")
     print("---------------------------------------")
-    print("ID: {}".format(first_name, last_name))
-    print("Name: {} {}".format(age))
+    print("ID: {}".format(human_id))
+    print("Name: {} {}".format(first_name, last_name))
+    print("Age: {}".format(age))
     print("Email: {}".format(email))
     print("Password: {}".format(password))
     print("Living Pod: {}".format(pod))
