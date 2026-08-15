@@ -210,7 +210,7 @@ def pod_status():
         for pod in pods:
             count = 0
 
-            for human in human:
+            for human in humans:
                 if human[6] == pod:
                     count = count + 1
             spaces = POD_LIMIT - count
