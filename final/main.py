@@ -295,3 +295,24 @@ def special_mission():
 
             print("\nMission note: Collect Martian soil samples near Erebus Montes.")
             print("Goal: turn one planter of toxic soil into safe crop soil.")
+
+# This function shows the menu and checks for a menu choice 
+def show_menu():
+    print("\nMars Base - HUman Account Setup System")
+    print("------------------------------------------")
+    print("1. Create a new Mars Base human account")
+    print("2. List all Mars Base humans")
+    print("3. Search by last name")
+    print("4. Living pod status")
+    print("5. Admin population report")
+    print("6. Delete a human account")
+    print("7. Bonus greenhouse mission")
+    print("8. Exit")
+
+    choice = input("Choose an option from 1 to 8: ")
+
+    while choice not in ["1", "2", "3", "4", "5", "6", "7", "8"]:
+        print("That is not a valid menu choice")
+        choice = input("Choose an option from 1 to 8: ")
+
+        return choice
