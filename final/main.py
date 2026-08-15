@@ -263,3 +263,35 @@ def delete_account():
         save_humans(new_list)
     else:
         print("No human with that ID was found.")
+
+# This is the bonus function randomly picks 2-4 humans for a greenhouse mission
+def special_mission():
+    humans = load_humans()
+
+    print("\nSpecial Mars Base Greenhouse Mission")
+    print("----------------------------------------")
+
+    if len(humans) < 2:
+        print("At least 2 humans are needed for this mission.")
+
+    else:
+        mission_size = random.randint(2, 4)
+
+        if mission_size > len(humans):
+            mission_size = len(humans)
+
+        chosen = []
+
+        while len(chosen) < mission_size:
+            human = random.choice(humans)
+
+            if human not in chosen:
+                chosen.append(human)
+
+        print("Mission crew selected for soil recovery:")
+
+        for human in chosen:
+            print("- {} {} from {}".format(human[1], human[2], human[6]))
+
+            print("\nMission note: Collect Martian soil samples near Erebus Montes.")
+            print("Goal: turn one planter of toxic soil into safe crop soil.")
