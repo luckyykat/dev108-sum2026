@@ -316,3 +316,31 @@ def show_menu():
         choice = input("Choose an option from 1 to 8: ")
 
         return choice
+
+# This function keeps the program running until the user exits
+def main():
+    choice = ""
+
+    while choice != "8":
+        choice = show_menu()
+
+        if choice == "1":
+            create_account()
+        elif choice == "2":
+            list_humans()
+        elif choice == "3":
+            search_last_name()
+        elif choice == "4":
+            pod_status()
+        elif choice == "5":
+            admin_report()
+        elif choice == "6":
+            delete_account()
+        elif choice == "7":
+            special_mission()
+        elif choice == "8":
+            print("Goodbye, Mars Base crew member!")
+
+
+if __name__ == "__main__":
+    main()
