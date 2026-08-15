@@ -7,7 +7,7 @@ import csv
 import random
 
 # Main settings for csv file, admin password, and pod size
-FILE_NAME = "marsbase_humans.csv"
+FILE_NAME = "final/marsbase_humans.csv"
 ADMIN_PASSWORD = "MarsBaseAdmin4"
 POD_LIMIT = 4
 
