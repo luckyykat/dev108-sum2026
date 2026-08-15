@@ -295,8 +295,8 @@ def special_mission():
         for human in chosen:
             print("- {} {} from {}".format(human[1], human[2], human[6]))
 
-            print("\nMission note: Collect Martian soil samples near Erebus Montes.")
-            print("Goal: turn one planter of toxic soil into safe crop soil.")
+        print("\nMission note: Collect Martian soil samples near Erebus Montes.")
+        print("Goal: turn one planter of toxic soil into safe crop soil.")
 
 # This function shows the menu and checks for a menu choice 
 def show_menu():
