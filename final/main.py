@@ -35,6 +35,7 @@ def get_text(prompt):
 
     while answer == "":
         print("Please do not leave this blank.")
+        answer = input(prompt).strip()
 
     return answer
 
