@@ -54,7 +54,7 @@ def make_id(humans):
     used = []
 
     for human in humans:
-        used.append(humans[0])
+        used.append(human[0])
 
     new_id = str(random.randint(1000, 9999))
 
