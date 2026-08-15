@@ -43,3 +43,5 @@ The program displays the full admin report with ID, name, email, password, and n
 ## Incorrect Input Handling
 The program ensures that menu selections are valid numbers between 1 and 8. It also verifies that names aren’t empty and that age is entered using only numbers.
 
+## AI Disclosure
+I didn’t use AI for this project. However, I looked up how to write a README.md file online because I couldn’t find anything about it in our modules or book. I’ve never written one before, so I wasn’t sure if there was a specific format.
